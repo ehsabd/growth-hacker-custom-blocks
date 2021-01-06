@@ -1,0 +1,39 @@
+
+
+.article-block__mute_label {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+}
+
+.article-block__button {
+    background: #ffe474;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+
+@media only screen and (min-width:768px){
+    .article-block__mute_label {
+    margin-left: 15px;
+    }
+    .article-block__content {
+        display: flex;
+    }
+    .article-block__image {
+        flex-shrink: 0;
+        margin-right: 25px;
+        width: 270px;
+        height: 270px;
+    }
+    .article-block__box, .article-block__wrap {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}

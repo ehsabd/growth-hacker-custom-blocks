@@ -1,0 +1,23 @@
+{
+  "name": "xfeature-guten-block",
+  "version": "0.1.0",
+  "description": "A block for featured items",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build && rsync -arvz build ./growth-hacker-custom-blocks && rm -rf build"
+  },
+  "keywords": [
+    "featured_item",
+    "call_to_action",
+    "image",
+    "text",
+    "gutenberg_block",
+    "two-columns"
+  ],
+  "author": "fantasticoder (https://old.reddit.com/user/fantasticoder/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@wordpress/scripts": "12.6.1"
+  }
+}

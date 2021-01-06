@@ -1,0 +1,4 @@
+/node_modules
+/growth-hacker-custom-blocks/build
+package-lock.json
+build-and-copy-to-wp.sh
