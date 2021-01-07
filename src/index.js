@@ -16,7 +16,7 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
         title: {
             type: 'array',
             source: 'children',
-            selector: 'h2',
+            selector: 'h3',
         },
         mediaID: {
             type: 'number',
@@ -79,6 +79,7 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
 
         return (
             <div className={className}>
+                <div className="title-wrap">
                 <RichText
                     tagName="h3"
                     placeholder={__(
@@ -88,6 +89,8 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
                     value={title}
                     onChange={onChangeTitle}
                 />
+                </div>
+                
                 <div className="article-block__content">
                     <div className="article-block__image">
                         <MediaUpload
