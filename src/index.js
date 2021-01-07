@@ -60,6 +60,13 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
             });
         };
 
+        const onRemoveImage = () =>{
+            setAttributes({
+                mediaID:undefined,
+                mediaURL:undefined,
+            });
+        }
+
         const onChangeTitle = (value) => {
             setAttributes({ title: value });
         };
@@ -93,7 +100,8 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
                 
                 <div className="article-block__content">
                     <div className="article-block__image">
-                        <MediaUpload
+                    { mediaID && <button type="button" onClick={onRemoveImage} className="components-button is-destructive">Remove Image</button>
+                        }    <MediaUpload
                             onSelect={onSelectImage}
                             allowedTypes="image"
                             value={mediaID}
