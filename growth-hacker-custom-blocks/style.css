@@ -25,6 +25,7 @@
     }
     .article-block__content {
         display: flex;
+        overflow: hidden;
     }
     .article-block__image {
         flex-shrink: 0;

@@ -80,7 +80,7 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
         return (
             <div className={className}>
                 <RichText
-                    tagName="h2"
+                    tagName="h3"
                     placeholder={__(
                         'Write Featured Item Title…',
                         'growth-hacker-custom-blocks'
@@ -174,7 +174,7 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
 
         return (
             <div className="{className">
-                <a className="article-block__title" href="{ctaURL}" target="_blank" rel="nofollow noopener noreferrer" ><RichText.Content tagName="h2" value={title} /></a>
+                <RichText.Content tagName="h3" value={title} />
 
                 <div className="article-block__content">
                     <a className="article-block__image" href="https://www.amazon.com/dp/B07F9NGRKF/">
