@@ -2,4 +2,5 @@
 /growth-hacker-custom-blocks/build
 package-lock.json
 build-and-copy-to-wp.sh
+create-archive.sh
 growth-hacker-custom-blocks.zip
