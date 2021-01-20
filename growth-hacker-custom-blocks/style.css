@@ -135,3 +135,54 @@ a.article-block__image{
 .shareicons-icon-wrapper.shareicons-share-btn {
     padding: 5px;
 }
+
+.shareicons-svc-facebook{
+    background-color: rgb(59, 89, 152) !important;
+    position: relative;
+    padding: 8px !important; 
+}
+
+.shareicons-svc-twitter{
+    background-color: rgb(29, 161, 242) !important; 
+    position: relative;
+    padding: 8px !important; 
+}
+
+.shareicons-svc-pinterest_share{
+    background-color: rgb(203, 32, 39) !important; 
+    position: relative;
+    padding: 8px !important; 
+    
+}
+.shareicons-svc-pinterest_share::before{
+    left:0;right: 0;top: 0;bottom: 0;
+    font-family: dashicons;
+    position: absolute;
+    content: "\f192";
+    color: white;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.shareicons-svc-twitter::before{
+    left:0;right: 0;top: 0;bottom: 0;
+    font-family: dashicons;
+    position: absolute;
+    content: "\f301";
+    color: white;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.shareicons-svc-facebook::before{
+    left:0;right: 0;top: 0;bottom: 0;
+    font-family: dashicons;
+    position: absolute;
+    content: "\f305";
+    color: white;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
