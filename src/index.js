@@ -24,7 +24,7 @@ const FacebookShareButton = (props) => {
 }
 
 const TwitterShareButton = (props) => {
-    const url = 'https://twitter.com/share?url=' + props.url;
+    const url = `https://twitter.com/share?url=${props.url}&text=${encodeURIComponent(props.text)}`;
     return (
         <a href={url} role="button" tabindex="0" className="shareicons-icon-wrapper shareicons-share-btn shareicons-svc-twitter" style="background-color: rgb(29, 161, 242); border-radius: 26px;"><span className="at4-visually-hidden">Share to Twitter</span><span className="shareicons-icon-wrapper" style="line-height: 20px; height: 20px; width: 20px;"><svg viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="shareicons-svg-twitter-8" className="shareicons-icon shareicons-icon-twitter" style="fill: rgb(255, 255, 255); width: 20px; height: 20px;"><title id="shareicons-svg-twitter-8">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span></a>
     )
@@ -310,9 +310,9 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
 
                             <div className="shareicons-resp-share-element shareicons-style-responsive at4-show shareicons-mobile" role="region"><div className="shareicons-share-btn-elements">
 
-                                <FacebookShareButton url={window.location.href}></FacebookShareButton>
-                                <TwitterShareButton url={window.location.href}></TwitterShareButton>
-                                <PinterestShareButton url={window.location.href} media={mediaURL} description={content}></PinterestShareButton>
+                                <FacebookShareButton url={ctaURL}></FacebookShareButton>
+                                <TwitterShareButton url={ctaURL} text={content}></TwitterShareButton>
+                                <PinterestShareButton url={ctaURL} media={mediaURL} description={content}></PinterestShareButton>
 
 
                             </div></div></div></div></div></div>
