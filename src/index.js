@@ -66,7 +66,7 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
         ctaLabel: {
             type: 'array',
             source: 'children',
-            selector: '.article-block__button span'
+            selector: '.article-block__button'
         },
         ctaMuteLabel: {
             type: 'array',
@@ -302,7 +302,7 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
                             <div className="article-block__text">
                                 <RichText.Content tagName="p" value={content} />
                             </div>
-                            <div className="article-block__footer"><a className="article-block__button" href={ctaURL} target="_blank" rel="nofollow noopener noreferrer"><RichText.Content tagName="span" value={ctaLabel} /></a>
+                            <div className="article-block__footer"><RichText.Content className="article-block__button" href={ctaURL} target="_blank" rel="nofollow noopener noreferrer" tagName="a" value={ctaLabel} />
 
                                 <RichText.Content tagName="span" className="article-block__mute_label" value={ctaMuteLabel} /></div>
                         </div>
