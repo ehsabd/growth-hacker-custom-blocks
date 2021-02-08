@@ -64,12 +64,14 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
             selector: '.article-block__button'
         },
         ctaLabel: {
-            type: 'string',
-            source: 'text',
-            selector: '.article-block__button'
+            type: 'array',
+            source: 'children',
+            selector: '.article-block__button span'
         },
         ctaMuteLabel: {
-            type: 'string'
+            type: 'array',
+            source: 'children',
+            selector: '.article-block__mute_label'
         },
         borderClassName: {
             type: 'string'
@@ -300,9 +302,9 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
                             <div className="article-block__text">
                                 <RichText.Content tagName="p" value={content} />
                             </div>
-                            <div className="article-block__footer"><a className="article-block__button" href={ctaURL} target="_blank" rel="nofollow noopener noreferrer">{ctaLabel}</a>
+                            <div className="article-block__footer"><a className="article-block__button" href={ctaURL} target="_blank" rel="nofollow noopener noreferrer"><RichText.Content tagName="span" value={ctaLabel} /></a>
 
-                                <span className="article-block__mute_label">{ctaMuteLabel}</span></div>
+                                <RichText.Content tagName="span" className="article-block__mute_label" value={ctaMuteLabel} /></div>
                         </div>
                         <div className="article-block__controls"
                         ><div className="controls-box share-open"><div className="controls-box__button controls-box__button-favorite icon-bookmark"></div><div className="controls-box__share"><div className="controls-box__button controls-box__button-share icon-share"></div><div className="controls-box__share-drop">
