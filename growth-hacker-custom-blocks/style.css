@@ -120,10 +120,10 @@ a.article-block__image{
 .shareicons-resp-share-element{position:relative;padding:0;margin:0;font-size:0;line-height:0}
 .shareicons-resp-share-element:after,.shareicons-resp-share-element:before{content:" ";display:table}
 .shareicons-resp-share-element.shareicons-mobile .at4-share-count-container,.shareicons-resp-share-element.shareicons-mobile .shareicons-label{display:none}
-.shareicons-resp-share-element .shareicons-share-btn{display:inline-block;*display:inline;*zoom:1;margin:0 2px 5px;padding:0;overflow:hidden;line-height:0;text-decoration:none;text-transform:none;color:#fff;cursor:pointer;transition:all .2s ease-in-out;border:0;font-family:helvetica neue,helvetica,arial,sans-serif;background-color:transparent}
+.shareicons-resp-share-element .shareicons-share-btn{display:inline-block;*display:inline;*zoom:1;margin:0 2px 5px;padding:0;overflow:hidden;line-height:0;text-decoration:none;text-transform:none;color:#fff;cursor:pointer;transition:all .2s ease-in-out;border:0;font-family:helvetica neue,helvetica,arial,sans-serif;background-color:transparent;border-radius: 26px;}
 .shareicons-resp-share-element .shareicons-share-btn::-moz-focus-inner{border:0;padding:0}
 .shareicons-resp-share-element .shareicons-share-btn:focus,.shareicons-resp-share-element .shareicons-share-btn:hover{transform:scale(1.1);color:#fff;text-decoration:none}
-.shareicons-resp-share-element .shareicons-share-btn .shareicons-icon-wrapper{float:left}
+.shareicons-resp-share-element .shareicons-share-btn .shareicons-icon-wrapper{float:left;line-height: 20px; width: 20px; height: 20px }
 .shareicons-resp-share-element .shareicons-share-btn.shareicons-share-btn.shareicons-svc-compact:hover{transform:none}
 .shareicons-resp-share-element .shareicons-share-btn .shareicons-label{font-family:helvetica neue,helvetica,arial,sans-serif;font-size:9pt;padding:0 15px 0 0;margin:0 0 0 5px;height:2pc;line-height:2pc;background:none}
 .shareicons-resp-share-element .shareicons-icon,.shareicons-resp-share-element .shareicons-label{cursor:pointer}.shareicons-resp-share-element .at4-share-count-container{text-decoration:none;float:right;padding-right:15px;font-size:9pt}
