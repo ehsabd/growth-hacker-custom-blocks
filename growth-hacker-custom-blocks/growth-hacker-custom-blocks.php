@@ -3,7 +3,7 @@
 /*
 Plugin Name:  Growth Hacker Custom Blocks
 Description:  A Plugin that adds custom blocks to your gutenberg
-Version:      0.1.6
+Version:      0.1.7
 Author:       ehsabd
 Text Domain:  growth-hacker-custom-blocks
 Domain Path:  /languages
