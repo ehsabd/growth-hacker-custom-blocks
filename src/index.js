@@ -180,6 +180,7 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
 
                 <div className="article-block__content">
                     <div className="article-block__image">
+                        <div className="edit-image-buttons">
                         {mediaID && <button type="button" onClick={onRemoveImage} className="components-button is-destructive">Remove Image</button>
                         }    <MediaUpload
                             onSelect={onSelectImage}
@@ -208,7 +209,9 @@ registerBlockType('growth-hacker-custom-blocks/xfeature-block', {
                                         )}
                                 </Button>
                             )}
-                        /></div>
+                        />
+                        </div>
+                    </div>
 
                     <div className="article-block__box">
                         <div className="article-block__wrap">
